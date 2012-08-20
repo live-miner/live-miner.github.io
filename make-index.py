@@ -35,6 +35,7 @@ def main ():
 	tree = listdir ('releases')
 	tree[-1]['latest'] = True
 	tree[-1]['note'] = 'latest release'
+	tree = tree[::-1]
 	sys.stdout.buffer.write (t.render (tree=tree).encode ('utf_8'))
 
 if __name__ == '__main__':
