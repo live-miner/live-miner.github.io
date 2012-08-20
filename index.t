@@ -4,6 +4,7 @@
 		<meta charset='utf-8'>
 		<title>live-miner files</title>
 		<script src="jquery-1.8.0.min.js"></script>
+		<script src="jquery.sortElements.js"></script>
 		<script src="index.js"></script>
 		<style type="text/css">
 			li.interesting > a {
