@@ -19,8 +19,8 @@
 			{% for entry in tree recursive %}
 				{% if entry.children %}
 					<li class="{% if entry.latest %}latest{% endif %}">
-						<a href="#" class="directory">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %} …
-						<ul>{{ loop (entry.children) }}</ul>
+						<a href="#" class="directory">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %} <span class="collapsed-status">…</span>
+						<ul class="directory">{{ loop (entry.children) }}</ul>
 					</li>
 				{% else %}
 					<li class="{% if entry.interesting %}interesting{% endif %}">
