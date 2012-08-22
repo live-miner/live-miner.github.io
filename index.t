@@ -25,7 +25,7 @@
 				</li>
 			{% else %}
 				<li class="{% if entry.interesting %}interesting{% endif %}">
-					<a href="{{ entry.path }}">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %}
+					<a href="https://sourceforge.net/projects/live-miner/files/{{ entry.path }}">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %}
 				</li>
 			{% endif %}
 		{% endfor %}
