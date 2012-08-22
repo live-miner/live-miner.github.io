@@ -17,13 +17,13 @@
 		<ul id="downloads">
 			{% for entry in tree recursive %}
 				{% if entry.children %}
-				<li{% if entry.latest %} class="latest"{% endif %}>
-					<a href="#" class="directory">{{ entry.name }}</a>
+				<li class="{% if entry.latest %}latest{% endif %}">
+					<a href="#" class="directory">{{ entry.name }}</a> …
 					{% if entry.note %}({{ entry.note }}){% endif %}
 					<ul>{{ loop (entry.children) }}</ul>
 				</li>
 			{% else %}
-				<li{% if entry.interesting %} class="interesting"{% endif %}>
+				<li class="{% if entry.interesting %}interesting{% endif %}">
 					<a href="{{ entry.path }}">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %}
 				</li>
 			{% endif %}
