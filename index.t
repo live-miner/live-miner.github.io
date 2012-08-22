@@ -14,6 +14,7 @@
 
 	<body>
 		<h1>live-miner releases</h1>
+		<p>Releases are signed with PGP; import the <a href="keys.asc">release keyring</a> if you want to check them.
 		<ul id="downloads">
 			{% for entry in tree recursive %}
 				{% if entry.children %}
