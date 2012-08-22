@@ -18,17 +18,16 @@
 		<ul id="downloads">
 			{% for entry in tree recursive %}
 				{% if entry.children %}
-				<li class="{% if entry.latest %}latest{% endif %}">
-					<a href="#" class="directory">{{ entry.name }}</a> …
-					{% if entry.note %}({{ entry.note }}){% endif %}
-					<ul>{{ loop (entry.children) }}</ul>
-				</li>
-			{% else %}
-				<li class="{% if entry.interesting %}interesting{% endif %}">
-					<a href="https://sourceforge.net/projects/live-miner/files/{{ entry.path }}">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %}
-				</li>
-			{% endif %}
-		{% endfor %}
+					<li class="{% if entry.latest %}latest{% endif %}">
+						<a href="#" class="directory">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %} …
+						<ul>{{ loop (entry.children) }}</ul>
+					</li>
+				{% else %}
+					<li class="{% if entry.interesting %}interesting{% endif %}">
+						<a href="https://sourceforge.net/projects/live-miner/files/{{ entry.path }}">{{ entry.name }}</a>{% if entry.note %} ({{ entry.note }}){% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
 		</ul>
 	</body>
 </html>
