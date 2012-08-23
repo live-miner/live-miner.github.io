@@ -31,3 +31,4 @@
 		</ul>
 	</body>
 </html>
+<!-- vim: set ft=jinja ts=4 sts=4 sw=4 noet :-->
