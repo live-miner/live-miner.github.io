@@ -1,2 +1,2 @@
-3fd28778-ec5f-11e1-8bcd-e7cf64df64f7 encryption=none name=sourceforge rsyncurl=cortana@web.sourceforge.net:/home/project-web/live-miner/annex type=rsync timestamp=1345716500.383437s
+3fd28778-ec5f-11e1-8bcd-e7cf64df64f7 encryption=none name=sourceforge rsyncurl=cortana@web.sourceforge.net:/home/project-web/live-miner/annex shellescape=no type=rsync timestamp=1345716559.92056s
 a6a185aa-ec5d-11e1-8c2f-6fbb81074883 encryption=none name=test rsyncurl=cortana@web.sourceforge.net:/home/project-web/live-miner/annex type=rsync timestamp=1345642901.375025s
