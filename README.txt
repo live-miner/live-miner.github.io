@@ -117,9 +117,9 @@ Building your own image
 
 Most of the heavy lifting is done by the excellent tools provided by the
 http://live.debian.net/[Debian Live project]. I'm building the images on a
-Debian system, but any reasonably modern Linux system with
+Debian wheezy system, but any reasonably modern Linux system with
 http://live.debian.net/manual-3.x/html/live-manual/installation.en.html#121[live-build]
-installed should work.
+3.0 installed should work.
 
 After installing `live-build`, `make`, 'asciidoc' and 'git':
 
