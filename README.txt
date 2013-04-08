@@ -134,10 +134,8 @@ http://live.debian.net/manual-3.x/html/live-manual/installation.en.html#121[live
 After installing `live-build`, `make`, 'asciidoc' and 'git':
 
 ----
-$ git clone https://github.com/live-miner/live-miner.git
+$ git clone --recursive https://github.com/live-miner/live-miner.git
 $ cd live-miner
-$ git submodule init
-$ git submodule update
 $ make
 ----
 
