@@ -37,8 +37,8 @@ instance:
 live-miner.urls=http://user:pass@host0:port\040http://user:pass@host1:port
 ----
 
-Values from boot parameters override values from the file. Which ones you use
-depend on how you are going to boot:
+Values from boot parameters override values from the file. The method that you
+choose to boot with will determine which of the two you use:
 
 USB stick
 ~~~~~~~~~
@@ -61,13 +61,13 @@ CD/DVD
 ~~~~~~
 
 While `binary.iso` can be written to a CD and booted without any further
-chances, you will have to do your configuration at the boot menu, which is not
-very convenient. To do so, press the Tab key, and then append boot parameters
-to the list that appears. Press Enter to actually boot.
+chances, you will have to do your configuration at the boot menu. To do so,
+press the Tab key during the 5-second boot countdown, and then append boot
+parameters to the list that appears. Press Enter to actually boot.
 
 If you will be rebooting often, or have several computers to configure, you can
-save time and effort by by remastering the CD with an edited
-`live/live-miner.conf`, or by booting with a different method.
+avoid the inconvenience of manual configuration by remastering the CD with an
+edited `live/live-miner.conf`, or by booting with a different method.
 
 Network
 ~~~~~~~
@@ -112,6 +112,32 @@ adding the following to `/etc/exports`:
 Run `exportfs -r` after editing `/etc/exports`. Finally, configure your
 machines for network booting in their BIOS, and reboot them!
 
+Mining with two graphics cards
+------------------------------
+
+In order to use more than one graphics card in a system, you must create a file
+`live/xorg.conf` on the live medium. You should be able to start by taking a
+copy of the provided `live/xorg.conf.example` file. You will have to change the
+`BusID` values to match those used by your own particular hardware. These
+values are in the format `"PCI:bus:device:function"`.
+
+In order to find out the correct values for your particular hardware, boot
+live-miner and run `lspci` to find out the appropriate values for your own
+system. For example:
+
+----
+$ lspci -d 1002:
+01:00.0 VGA compatible controller: Advanced Micro Devices [AMD] nee ATI Cypress PRO [Radeon HD 5800 Series]
+01:00.1 Audio device: Advanced Micro Devices [AMD] nee ATI Cypress HDMI Audio [Radeon HD 5800 Series]
+06:00.0 VGA compatible controller: Advanced Micro Devices [AMD] nee ATI Cypress PRO [Radeon HD 5800 Series]
+06:00.1 Audio device: Advanced Micro Devices [AMD] nee ATI Cypress HDMI Audio [Radeon HD 5800 Series]
+----
+
+The `-d` argument to `lspci` sets up a filter, in this case for vendor `1002`
+(i.e., AMD). Note that `lspci` uses a full stop to delimit between the device
+and function fields, but Xorg expects a colon to be used. Hence the correct
+`BusID` values for this system are `"PCI:1:0:0"` and `"PCI:6:0:0"`.
+
 Building your own image
 -----------------------
 
@@ -146,10 +172,8 @@ live-miner contains materials licensed under the GPL (and similar licenses).
 TODO
 ----
 
-Automatically run one instance of poclbm for each ATI graphics card in the
-system.
-
-Use `aticonfig` to detect whether the Xorg driver should be forced to `fglrx`.
+Automatically generate `xorg.conf` a boot time, for any number of graphics
+cards.
 
 Acknowledgements
 ----------------
