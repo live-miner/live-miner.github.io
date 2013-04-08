@@ -21,6 +21,15 @@ Downloads
 
 http://live-miner.github.com/releases.html[Download live-miner here!]
 
+Release 2: 2013-04-08::
+	* Updated poclbm to support the http://mining.bitcoin.cz/stratum-mining[Stratum mining protocol]
+	* Added support for multiple graphics cards
+	* Added the ability for the user to provide their own `xorg.conf`
+	* Changed window manager to i3
+
+Release 1: 2012-08-20::
+	The initial release!
+
 Configuration
 -------------
 
@@ -157,6 +166,23 @@ then be sure to do the full build of all three binary images, plus the source
 archives. If you distribute a binary image to a third party, you must also
 (offer to) give them the source archives as well. This is necessary because
 live-miner contains materials licensed under the GPL (and similar licenses).
+
+FAQ
+---
+
+[quanda]
+How do I use this crazy GUI?::
+	Press the Windows key + an arrow key to move between windows.
+Win+Shift+arrow will move a window around on the screen. Win+Enter will
+fire up a new terminal. See the http://i3wm.org/docs/userguide.html[i3 User's
+Guide] for the full details, and the http://i3wm.org/docs/refcard.html[i3
+Reference Card] for quick reference.
+
+TODO
+----
+
+Run processes within http://tmux.sourceforge.net/[tmux] and provide
+`openssh-server` to make remote monitoring easier.
 
 Acknowledgements
 ----------------
