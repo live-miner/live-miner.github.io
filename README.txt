@@ -29,16 +29,23 @@ Configuration happens in two places:
  1. Boot parameters
  2. Configuration file (`live/live-miner.conf`)
 
-See `live/live-miner.conf` for the list of options and their corresponding boot
-parameters. In order to escape spaces in boot parameters, use octal. For
-instance:
+See `live/live-miner.conf` for the list of options specific to live-miner, and
+their corresponding boot parameters. In order to escape spaces in boot
+parameters, use octal. For instance:
 
 ----
 live-miner.urls=http://user:pass@host0:port\040http://user:pass@host1:port
 ----
 
-Values from boot parameters override values from the file. The method that you
-choose to boot with will determine which of the two you use:
+Values from boot parameters override values from the file. Whether you use the
+boot parameters or the configuration file will depend on how you choose to boot
+live-miner.
+
+See the man pages for
+http://manpages.debian.net/cgi-bin/man.cgi?query=live-boot&apropos=0&sektion=0&manpath=Debian+testing+wheezy&format=html&locale=en[live-boot]
+and
+http://manpages.debian.net/cgi-bin/man.cgi?query=live-config&apropos=0&sektion=0&manpath=Debian+testing+wheezy&format=html&locale=en[live-config]
+for more boot parameters.
 
 USB stick
 ~~~~~~~~~
