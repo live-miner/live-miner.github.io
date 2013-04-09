@@ -77,7 +77,7 @@ CD/DVD
 ~~~~~~
 
 While `binary.iso` can be written to a CD and booted without any further
-chances, you will have to do your configuration at the boot menu. To do so,
+changes, you will have to do your configuration at the boot menu. To do so,
 press the Tab key during the 5-second boot countdown, and then append boot
 parameters to the list that appears. Press Enter to actually boot.
 
