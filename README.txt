@@ -51,10 +51,11 @@ boot parameters or the configuration file will depend on how you choose to boot
 live-miner.
 
 See the man pages for
-http://manpages.debian.net/cgi-bin/man.cgi?query=live-boot&apropos=0&sektion=0&manpath=Debian+testing+wheezy&format=html&locale=en[live-boot]
-and
-http://manpages.debian.net/cgi-bin/man.cgi?query=live-config&apropos=0&sektion=0&manpath=Debian+testing+wheezy&format=html&locale=en[live-config]
-for more boot parameters.
+http://live.debian.net/manpages/3.x/en/html/live-boot.7.html[live-boot] and
+http://live.debian.net/manpages/3.x/en/html/live-config.7.html[live-config] for
+more boot parameters. Of particular note is `toram`; if you use this then you
+can remove the USB stick or CD/DVD once the system has booted. This might be
+useful if you have several machines, but only one USB stick!
 
 USB stick
 ~~~~~~~~~
