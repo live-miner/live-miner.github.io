@@ -28,7 +28,7 @@ Release 2: 2013-04-08::
 	* Changed window manager to i3
 
 Release 1: 2012-08-20::
-	The initial release!
+	* The initial release!
 
 Configuration
 -------------
@@ -147,7 +147,7 @@ Debian wheezy system, but any reasonably modern Linux system with
 http://live.debian.net/manual-3.x/html/live-manual/installation.en.html#121[live-build]
 3.0 installed should work.
 
-After installing `live-build`, `make`, 'asciidoc' and 'git':
+After installing `live-build`, `make`, 'asciidoc' and `git`:
 
 ----
 $ git clone --recursive https://github.com/live-miner/live-miner.git
