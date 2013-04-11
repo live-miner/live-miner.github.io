@@ -38,9 +38,13 @@ Configuration happens in two places:
  1. Boot parameters
  2. Configuration file (`live/live-miner.conf`)
 
-See `live/live-miner.conf` for the list of options specific to live-miner, and
-their corresponding boot parameters. In order to escape spaces in boot
-parameters, use octal. For instance:
+See `live/live-miner.conf` on the live medium for the list of options specific
+to live-miner, and their corresponding boot parameters. The system can be
+reconfigured at run time if you edit `/etc/live-miner.conf` and then restart
+the GUI (press Windows+Shift+E).
+
+In order to escape
+spaces in boot parameters, use octal. For instance:
 
 ----
 live-miner.urls=http://user:pass@host0:port\040http://user:pass@host1:port
@@ -173,11 +177,12 @@ FAQ
 
 [quanda]
 How do I use this crazy GUI?::
-	Press the Windows key + an arrow key to move between windows.
-Win+Shift+arrow will move a window around on the screen. Win+Enter will
-fire up a new terminal. See the http://i3wm.org/docs/userguide.html[i3 User's
-Guide] for the full details, and the http://i3wm.org/docs/refcard.html[i3
-Reference Card] for quick reference.
+	Windows+Enter will fire up a new terminal; Windows+D will open a quick
+prompt for running other programs. To restart the GUI from scratch, press
+Windows+Shift+E. To move the focus between windows, press Windows+Arrow keys.
+See the http://i3wm.org/docs/userguide.html[i3 User's Guide] for the full
+details, and the http://i3wm.org/docs/refcard.html[i3 Reference Card] for quick
+reference.
 
 TODO
 ----
