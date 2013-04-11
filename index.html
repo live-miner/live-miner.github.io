@@ -788,6 +788,11 @@ Added the ability for the user to provide their own <span class="monospaced">xor
 Changed window manager to i3
 </p>
 </li>
+<li>
+<p>
+Allow reconfiguration at runtime
+</p>
+</li>
 </ul></div>
 </dd>
 <dt class="hdlist1">
@@ -821,9 +826,12 @@ Configuration file (<span class="monospaced">live/live-miner.conf</span>)
 </p>
 </li>
 </ol></div>
-<div class="paragraph"><p>See <span class="monospaced">live/live-miner.conf</span> for the list of options specific to live-miner, and
-their corresponding boot parameters. In order to escape spaces in boot
-parameters, use octal. For instance:</p></div>
+<div class="paragraph"><p>See <span class="monospaced">live/live-miner.conf</span> on the live medium for the list of options specific
+to live-miner, and their corresponding boot parameters. The system can be
+reconfigured at run time if you edit <span class="monospaced">/etc/live-miner.conf</span> and then restart
+the GUI (press Windows+Shift+E).</p></div>
+<div class="paragraph"><p>In order to escape
+spaces in boot parameters, use octal. For instance:</p></div>
 <div class="listingblock">
 <div class="content monospaced">
 <pre>live-miner.urls=http://user:pass@host0:port\040http://user:pass@host1:port</pre>
@@ -947,21 +955,15 @@ How do I use this crazy GUI?
 </dt>
 <dd>
 <p>
-        Press the Windows key + an arrow key to move between windows.
-Win+Shift+arrow will move a window around on the screen. Win+Enter will
-fire up a new terminal. See the <a href="http://i3wm.org/docs/userguide.html">i3 User&#8217;s
-Guide</a> for the full details, and the <a href="http://i3wm.org/docs/refcard.html">i3
-Reference Card</a> for quick reference.
+        Windows+Enter will fire up a new terminal; Windows+D will open a quick
+prompt for running other programs. To restart the GUI from scratch, press
+Windows+Shift+E. To move the focus between windows, press Windows+Arrow keys.
+See the <a href="http://i3wm.org/docs/userguide.html">i3 User&#8217;s Guide</a> for the full
+details, and the <a href="http://i3wm.org/docs/refcard.html">i3 Reference Card</a> for quick
+reference.
 </p>
 </dd>
 </dl></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_todo">TODO</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Run processes within <a href="http://tmux.sourceforge.net/">tmux</a> and provide
-<span class="monospaced">openssh-server</span> to make remote monitoring easier.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -994,7 +996,7 @@ PERFORMANCE OF THIS SOFTWARE.</p></div>
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2013-04-11 12:48:32 BST
+Last updated 2013-04-11 13:20:26 BST
 </div>
 </div>
 </body>
