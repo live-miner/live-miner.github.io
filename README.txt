@@ -6,7 +6,7 @@ Burn this image to a CD, or write it to a USB stick, and when booted a system
 will automatically begin mining bitcoins by using
 https://github.com/m0mchil/poclbm[poclbm].
 
-You can find the latest version at http://live-miner.github.com/. If something
+You can find the latest version at http://live-miner.github.io/. If something
 doesn't work, https://github.com/live-miner/live-miner/issues[file a bug] or
 mailto:sam@robots.org.uk[send me an email].  If you are feeling generous, send
 spare BTC to `1MjtnhbdVAL21meEBnhHwfMSovN7kYtrH6`.
@@ -19,7 +19,7 @@ An x86_64 PC with an AMD Radeon HD 5000, 6000 or 7000 series graphics card.
 Downloads
 ---------
 
-http://live-miner.github.com/releases.html[Download live-miner here!]
+http://live-miner.github.io/releases.html[Download live-miner here!]
 
 Release 2: 2013-04-08::
 	* Updated poclbm to support the http://mining.bitcoin.cz/stratum-mining[Stratum mining protocol]
