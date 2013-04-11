@@ -184,12 +184,6 @@ See the http://i3wm.org/docs/userguide.html[i3 User's Guide] for the full
 details, and the http://i3wm.org/docs/refcard.html[i3 Reference Card] for quick
 reference.
 
-TODO
-----
-
-Run processes within http://tmux.sourceforge.net/[tmux] and provide
-`openssh-server` to make remote monitoring easier.
-
 Acknowledgements
 ----------------
 
