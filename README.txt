@@ -26,6 +26,7 @@ Release 2: 2013-04-08::
 	* Added support for multiple graphics cards
 	* Added the ability for the user to provide their own `xorg.conf`
 	* Changed window manager to i3
+	* Allow reconfiguration at runtime
 
 Release 1: 2012-08-20::
 	* The initial release!
